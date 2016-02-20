@@ -17,5 +17,14 @@ Product.create!(
             },
     image_url: 'ruby.jpg',
     price: 49.95
-)
-            
+    )
+
+Product.create!(
+    title: 'CoffeeScript is Super Duper',
+    description:
+        %{
+            CoffeeScript is super duper yummy!
+        },
+    image_url: 'cs.jpg',
+    price: 39.99
+    )
