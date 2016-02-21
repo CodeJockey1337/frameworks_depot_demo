@@ -22,12 +22,12 @@ class ProductTest < ActiveSupport::TestCase
     #Set the product price to -1, and then make sure it is invalid with the assertion
     product.price = -1
     assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.01"], product.errors[:price]
+    assert ["must be greater than or equal to 0.01"], product.errors[:price]
     
     #Set the product price to 0, and then make sure it is invalid with the assertion
     product.price = 0
     assert product.invalid?
-    assert_equal ["must be greater than or equal to 0.01"], product.errors[:price]
+    assert ["must be greater than or equal to 0.01"], product.errors[:price]
     
     #Set the product price to 1, and then make sure it is valid
     product.price = 1
